@@ -10,6 +10,7 @@ namespace CoffeeShopConsoleApp
         public BlackCoffee()
         {
             Discount = 1;
+            Blend = "Buku";
         }
 
         public override string Strength()

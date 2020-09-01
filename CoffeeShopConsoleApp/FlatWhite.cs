@@ -9,6 +9,7 @@ namespace CoffeeShopConsoleApp
         public FlatWhite()
         {
             Discount = 0;
+            Blend = "Kieni";
         }
 
         public override int price()

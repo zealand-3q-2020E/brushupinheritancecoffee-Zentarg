@@ -9,6 +9,7 @@ namespace CoffeeShopConsoleApp
         public Latte()
         {
             Discount = 4;
+            Blend = "Kirite";
         }
 
         public override int price()

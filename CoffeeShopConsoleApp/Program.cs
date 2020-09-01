@@ -30,6 +30,7 @@ namespace CoffeeShopConsoleApp
             foreach (var coffee in orderList)
             {
                 Console.WriteLine(coffee);
+                Console.WriteLine();
             }
 
 

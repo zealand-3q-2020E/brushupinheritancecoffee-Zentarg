@@ -10,12 +10,14 @@ namespace CoffeeShopConsoleApp
         public Cortado()
         {
             Discount = 2;
+            Blend = "Esmeralda";
         }
 
         public override int price()
         {
             return 25;
         }
+
 
         public override string Strength()
         {

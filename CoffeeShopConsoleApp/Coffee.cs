@@ -38,12 +38,13 @@ namespace CoffeeShopConsoleApp
             }
         }
 
+        public string Blend { get; set; }
 
         public abstract string Strength();
 
         public override string ToString()
         {
-            return $"Price: {price()} | Strength: {Strength()}";
+            return $"{this.GetType().Name}: \r\n > Price including discount: {price()} \r\n > Discount: {Discount} \r\n > Strength: {Strength()} \r\n > Blend: {Blend}";
         }
     }
 }
