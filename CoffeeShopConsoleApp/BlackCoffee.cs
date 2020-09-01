@@ -8,5 +8,10 @@ namespace CoffeeShopConsoleApp
     {
 
 
+
+        public override string Strength()
+        {
+            return "Strong";
+        }
     }
 }
