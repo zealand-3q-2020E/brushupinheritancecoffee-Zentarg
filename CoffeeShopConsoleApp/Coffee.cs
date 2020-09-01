@@ -9,6 +9,12 @@ namespace CoffeeShopConsoleApp
     /// </summary>
     public abstract class Coffee
     {
+
+        public Coffee()
+        {
+            Discount = 0;
+        }
+
         /// <summary>
         /// returns the price of the coffee
         /// It's possible to override this method, beacuse it is virtual 
@@ -16,8 +22,22 @@ namespace CoffeeShopConsoleApp
         /// <returns>20 dkr</returns>
         public virtual int price()
         {
-            return 20;
+            return 20 - Discount;
         }
+
+        private int _discount;
+
+        public int Discount
+        {
+            get { return _discount; }
+            set
+            {
+                if (value > 5)
+                    throw new ArgumentOutOfRangeException(nameof(Discount),"Discount cannot be larger than 5.");
+                _discount = value;
+            }
+        }
+
 
         public abstract string Strength();
 

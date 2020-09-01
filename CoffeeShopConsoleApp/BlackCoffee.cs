@@ -7,7 +7,10 @@ namespace CoffeeShopConsoleApp
     class BlackCoffee : Coffee
     {
 
-
+        public BlackCoffee()
+        {
+            Discount = 1;
+        }
 
         public override string Strength()
         {
