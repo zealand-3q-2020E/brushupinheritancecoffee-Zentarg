@@ -21,5 +21,9 @@ namespace CoffeeShopConsoleApp
 
         public abstract string Strength();
 
+        public override string ToString()
+        {
+            return $"Price: {price()} | Strength: {Strength()}";
+        }
     }
 }
