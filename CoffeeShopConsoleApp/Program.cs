@@ -14,14 +14,16 @@ namespace CoffeeShopConsoleApp
             {
                 new Cortado(),
                 new Latte(),
-                new BlackCoffee()
+                new BlackCoffee(),
+                new FlatWhite()
 
             };
 
             List<IMilk> milkOnlyList = new List<IMilk>()
             {
                 new Latte(),
-                new Cortado()
+                new Cortado(),
+                new FlatWhite()
             };
 
 
